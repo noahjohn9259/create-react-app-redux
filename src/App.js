@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import logo from './logo.svg'
-import './App.css'
-import { simpleAction } from './actions/simpleActions'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import logo from './logo.svg';
+import './App.css';
+import { simpleAction } from './actions/simpleActions';
 
 class App extends Component {
   constructor() {
-    super()
-    this.simpleAction = this.simpleAction.bind(this)
+    super();
+    this.simpleAction = this.simpleAction.bind(this);
   }
   simpleAction() {
-    this.props.simpleAction()
+    this.props.simpleAction();
   }
   render() {
     return (
@@ -28,23 +28,23 @@ class App extends Component {
           Test redux action
         </button>
       </div>
-    )
+    );
   }
 }
 
 const mapStateToProps = state => ({
   ...state,
-})
+});
 
 const mapDispatchToProps = dispatch => ({
   simpleAction: () => dispatch(simpleAction()),
-})
+});
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(App)
+)(App);
 
 App.propTypes = {
   simpleAction: PropTypes.func.isRequired,
-}
+};
