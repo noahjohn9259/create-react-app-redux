@@ -1,3 +1,4 @@
-/.next
-/public/*
-/__tests__
+# service worker
+/src/registerServiceWorker.js
+/src/stories
+/config/*
