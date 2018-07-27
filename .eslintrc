@@ -1,7 +1,8 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react"
+    "react",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 6,
@@ -21,7 +22,8 @@
     "airbnb",
     "eslint:recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "prettier/react"
   ],
   "rules": {
     "quotes": [ 1, "single" ],
@@ -41,6 +43,7 @@
     "import/default": 1,
     "import/export": 1,
     "import/no-extraneous-dependencies": 0,
-    "import/extensions": 0
+    "import/extensions": 0,
+    "prettier/prettier": ["error", { "singleQuote": true }]
   }
 }

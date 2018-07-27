@@ -3,8 +3,8 @@ export default (state = {}, action) => {
     case 'SIMPLE_ACTION':
       return {
         result: action.payload
-      }
+      };
     default:
-      return state
+      return state;
   }
 };
