@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import logo from './logo.svg';
@@ -24,9 +25,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <button type="button" onClick={this.simpleAction}>
+        <Button color="secondary" onClick={this.simpleAction}>
           Test redux action
-        </button>
+        </Button>
       </div>
     );
   }
