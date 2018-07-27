@@ -1,4 +1,5 @@
 # service worker
 /src/registerServiceWorker.js
+/src/store.js
 /src/stories
 /config/*

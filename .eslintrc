@@ -23,10 +23,15 @@
         "optionalDependencies": false,
         "peerDependencies": false
       }
-    ],
-    "semi": ["error", "never"]
+    ]
+  },
+  "globals": {
+    "document": true,
+    "localStorage": true,
+    "window": true
   },
   "env": {
-    "jest": true
+    "jest": true,
+    "browser": true
   }
 }
